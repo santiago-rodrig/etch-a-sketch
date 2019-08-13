@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    min-height: 100vh;
+    position: relative;
+    font-family: 'Long Cang', cursive, sans-serif, serif;
+    font-size: 1.5em;
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+header, footer {
+    background-color: #222;
+}
+header, footer, section, main {
+    padding: 20px;
+}
+header {
+    color: #fff;
+}
+footer a {
+    color: #0fcfd8;
+    text-decoration: none;
+}
+h1 {
+    margin: 0;
+}
