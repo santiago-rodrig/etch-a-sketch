@@ -1,29 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=devide-width, initial-scale=1">
-        <title>Etch a Sketch</title>
-        <link rel="stylesheet" href="normalize.css">
-        <link href="https://fonts.googleapis.com/css?family=Long+Cang&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <header>
-            <h1>Etch a Sketch</h1>
-        </header>
-        <section>
-            <h2>Directions</h2>
-            <p>Click the <strong>CREATE GRID</strong> button, write a <em>number</em> and a grid of <em>number x number</em> will be created, after that just hover the mouse over the grid to see how it gets painted.</p>
-        </section>
-        <main>
-            <button>CREATE GRID</button>
-            <div id="grid">
-            </div>
-        </main>
-        <footer>
-            <a href="https://github.com/santiago-rodrig/etch-a-sketch">Visit the repo!</a>
-        </footer>
-        <script src="main.js"></script>
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=devide-width, initial-scale=1">
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link
+    href="https://fonts.googleapis.com/css?family=Long+Cang&display=swap"
+    rel="stylesheet"
+    >
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Etch a Sketch</h1>
+    </header>
+    <section>
+      <h2>Directions</h2>
+      <p>
+        Click the <strong>CREATE GRID</strong> button, write a <em>number</em>
+        and a grid of <em>number x number</em> will be created, after that just
+        hover the mouse over the grid to see how it gets painted.
+      </p>
+    </section>
+    <main>
+      <div id="interactions">
+        <button>CREATE GRID</button>
+        <button>CLEAR GRID</button>
+        <form action="#">
+          <h3>Pick a color in RGB!</h3>
+          <label for="red">R</label>
+          <input id="red" name="red" type="number" min="0" max="255">
+          <label for="green">G</label>
+          <input id="green" name="green" type="number" min="0" max="255">
+          <label for="blue">B</label>
+          <input id="blue" name="blue" type="number" min="0" max="255">
+          <input type="submit" value="SUBMIT">
+        </form>
+      </div>
+      <div id="grid">
+      </div>
+    </main>
+    <footer>
+      <a href="https://github.com/santiago-rodrig/etch-a-sketch">
+        Visit the repo!
+      </a>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>
