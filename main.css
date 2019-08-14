@@ -28,14 +28,35 @@ footer a {
     color: #0fcfd8;
     text-decoration: none;
 }
-h1 {
+h1, h2, h3 {
     margin: 0;
 }
 button {
   display: block;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  padding: 0;
+  height: 40px;
 }
 #grid {
   margin: 0 auto;
+}
+#interactions {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+  align-items: center;
+  margin-bottom: 60px;
+}
+form {
+  background-color: #0fcfd8;
+  padding: 20px;
+  border-radius: 24px;
+}
+form h3 {
+  margin-bottom: 20px;
+}
+div#current-color {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }

@@ -6,8 +6,8 @@
     <title>Etch a Sketch</title>
     <link rel="stylesheet" href="normalize.css">
     <link
-    href="https://fonts.googleapis.com/css?family=Long+Cang&display=swap"
-    rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Long+Cang&display=swap"
+      rel="stylesheet"
     >
     <link rel="stylesheet" href="main.css">
   </head>
@@ -25,18 +25,25 @@
     </section>
     <main>
       <div id="interactions">
-        <button>CREATE GRID</button>
-        <button>CLEAR GRID</button>
+        <button id="create">CREATE GRID</button>
+        <button id="clear">CLEAR GRID</button>
         <form action="#">
           <h3>Pick a color in RGB!</h3>
           <label for="red">R</label>
-          <input id="red" name="red" type="number" min="0" max="255">
+          <input
+            id="red" name="red" type="number" min="0" max="255" value="0"
+          >
           <label for="green">G</label>
-          <input id="green" name="green" type="number" min="0" max="255">
+          <input
+            id="green" name="green" type="number" min="0" max="255" value="0"
+          >
           <label for="blue">B</label>
-          <input id="blue" name="blue" type="number" min="0" max="255">
-          <input type="submit" value="SUBMIT">
+          <input
+            id="blue" name="blue" type="number" min="0" max="255" value="0"
+          >
+          <input type="submit" name="submit" value="SUBMIT">
         </form>
+        <div id="current-color"></div>
       </div>
       <div id="grid">
       </div>
