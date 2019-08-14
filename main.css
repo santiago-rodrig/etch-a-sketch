@@ -11,9 +11,9 @@ body {
     font-size: 1.5em;
 }
 footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 header, footer {
     background-color: #222;
@@ -30,4 +30,12 @@ footer a {
 }
 h1 {
     margin: 0;
+}
+button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+#grid {
+  margin: 0 auto;
 }
