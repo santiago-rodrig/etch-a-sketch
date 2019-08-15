@@ -35,10 +35,10 @@ document.addEventListener('DOMContentLoaded', function() {
     currentColor.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
   });
   document.body.style.paddingBottom = (footer.offsetHeight + 40) + 'px';
-  grid.width = 960;
-  grid.height = 960;
-  grid.style.width = grid.width + 'px';
+  grid.style.width = 80 + 'vw';
   grid.style.height = grid.style.width;
+  grid.style.maxWidth = 960 + 'px';
+  grid.style.maxHeight = grid.style.maxWidth;
   createGridButton.addEventListener('click', function(e) {
     e.preventDefault();
     gridCreated = true;
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let rowOfSquaresList, numberOfSquares, squares;
     numberOfSquares =
     parseInt(prompt('Give the grid area in squares').trim());
-    square.width = grid.width / numberOfSquares;
+    square.width = grid.offsetWidth / numberOfSquares;
     square.height = square.width;
     square.style.width = square.width + 'px';
     square.style.height = square.style.width;

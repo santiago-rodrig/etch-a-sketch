@@ -60,3 +60,26 @@ div#current-color {
   height: 60px;
   border-radius: 50%;
 }
+@media only screen and (max-width: 768px) {
+  #interactions {
+    flex-direction: column;
+    height: auto;
+  }
+  #interactions button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  form input {
+    display: block;
+  }
+  form {
+    margin-top: 10px;
+  }
+  input[type="submit"] {
+    margin-top: 10px;
+    width: 100%;
+  }
+  div#current-color {
+    margin-top: 10px;
+  }
+}
